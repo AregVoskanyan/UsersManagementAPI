@@ -8,15 +8,6 @@ using UsersManagementAPI.Models;
 
 namespace UsersManagementAPI.Services
 {
-    public interface IUserSevice
-    {
-        Task<List<UserModel>> GetAllUsersAsync();
-        Task<UserModel> GetUserByIdAsync(int userId);
-        Task<int> AddUserAsync(UserModel user);
-        Task UpdateUserAsync(int userId, UserModel user);
-        Task UpdateUserPatchAsync(int userId, JsonPatchDocument user);
-        Task DeleteUserAsync(int userId);
-    }
     public class UserService : IUserSevice
     {
         private readonly DataContext _context;
