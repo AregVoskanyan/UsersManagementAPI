@@ -5,7 +5,7 @@ using UsersManagementAPI.Models;
 
 namespace UsersManagementAPI.Services
 {
-    public interface IUserSevice
+    public interface IUserService
     {
         Task<List<UserModel>> GetAllUsersAsync();
         Task<UserModel> GetUserByIdAsync(int userId);

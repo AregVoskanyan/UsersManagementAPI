@@ -8,7 +8,7 @@ using UsersManagementAPI.Models;
 
 namespace UsersManagementAPI.Services
 {
-    public class UserService : IUserSevice
+    public class UserService : IUserService
     {
         private readonly DataContext _context;
         private readonly IMapper _mapper;

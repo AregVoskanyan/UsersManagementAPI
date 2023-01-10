@@ -24,7 +24,7 @@ namespace UsersManagementAPI
         {
             services.AddDbContext<DataContext>(options => options.UseSqlServer(Configuration.GetConnectionString("UsersDB")));
             services.AddControllers().AddNewtonsoftJson();
-            services.AddTransient<IUserSevice, UserService>();
+            services.AddTransient<IUserService, UserService>();
             services.AddAutoMapper(typeof(Startup));
             services.AddSwaggerGen(c =>
             {
